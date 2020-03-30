@@ -18,6 +18,31 @@
 
 }
 
+@media screen and (min-width: 780px) and (orientation: landscape)
+{
+	
+	#global {
+		margin: 0 auto;
+		min-width: 780px; /* screen */
+		border: black 1px solid;
+		display: flex;
+		flex-direction: column;
+		/* flex-wrap: wrap; met ASIDE à 100 %... */
+	}
+	
+    nav { 
+    	display: block; 
+    	width: 100%;
+    	border: 1px solid black;
+    	  }
+    	  
+	 #menu { 
+	 	display: block; 
+    	width: 100%;
+    	border: 1px solid black;
+
+ 	}    
+}
 
 /* ATTRBIBUT MAIN */
 #global {
@@ -71,12 +96,18 @@ padding-left: 1em;
 width: 0.5em;
 color: red;
 fill: red;
+stroke: red;
 }
 
 section {
 display: flex;
 flex-direction: column;
 }
+
+nav {
+display: none;
+}
+
 
 
 /* STYLE POUR LE TITRE EN SVG */
