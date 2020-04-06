@@ -70,16 +70,81 @@ p {
 	padding-left: 1em;
 }
 
+section.contener-section {
+display: flex;
+flex-direction: column;
+width: 100%;
+border: 0px solid green;
+}
 
-.iconesMob {
-	width: 0.5em;
-	color: red;
-	fill: red;
-	stroke: red;
+header.contener-titre-section {
+display: flex;
+flex-direction: row;
+width: 100%;
+border: 0px solid black;
+}
+
+/* ICONES */
+
+div#globe {
+	background-image: url("../svg/icones/globe.svg");
+  	background-repeat: no-repeat;
+   background-origin: padding-box;
+	background-position: center center; 
+	width: 2em;
+}
+
+div#plume {
+	background-image: url("../svg/icones/plume.svg");
+  	background-repeat: no-repeat;
+   background-origin: padding-box;
+	background-position: center center; 
+	width: 2em;
+}
+
+div#drum {
+	background-image: url("../svg/icones/drum.svg");
+  	background-repeat: no-repeat;
+   background-origin: padding-box;
+	background-position: center center; 
+	width: 2em;
+}
+
+div#moon {
+	background-image: url("../svg/icones/moon.svg");
+  	background-repeat: no-repeat;
+  	background-origin: padding-box;
+	background-position: center center; 
+	width: 2em;
+}
+
+
+div.puce {
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+	flex-direction: row;
+	width: 5%;
+	border: 0px solid red;
+}
+
+div.puceTitre {
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	border: 0px solid red;
 }
 
 header > h1 {
 	display: none;
+}
+
+/* IMAGES SVG ICONES */
+
+.icones {
+width: 2em;
+height: 2em;
+
 }
 
 /* ###### STYLE SVG ###### */ 
@@ -119,7 +184,7 @@ section {
 nav { 
    display: block; 
    width: 100%;
-   border: 1px solid black;
+   border: 0px solid black;
     	  }
 
 
@@ -177,6 +242,45 @@ nav {
 		display: none;	
 	}
 
+
+
+/* ICONES */
+
+	div#globe {
+		background-image: url("../svg/icones/circle.svg");
+  		background-repeat: no-repeat;
+   	background-origin: padding-box;
+		background-position: center center ; 
+		width: 0.5em;
+		margin-left: 0.1em; 
+	}
+
+	div#plume {
+		background-image: url("../svg/icones/circle.svg");
+  		background-repeat: no-repeat;
+   	background-origin: padding-box;
+		background-position: center center; 
+		width: 0.5em;
+		margin-left: 0.1em; 
+	}
+
+	div#drum {
+		background-image: url("../svg/icones/circle.svg");
+  		background-repeat: no-repeat;
+   	background-origin: padding-box;
+		background-position: center center; 
+		width: 0.5em;
+		margin-left: 0.1em; 	
+	}
+
+	div#moon {
+		background-image: url("../svg/icones/circle.svg");
+  		background-repeat: no-repeat;
+  		background-origin: padding-box;
+		background-position: center center; 
+		width: 0.5em;
+		margin-left: 0.1em; 
+	}
 }
 
 
