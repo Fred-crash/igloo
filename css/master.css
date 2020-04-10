@@ -30,8 +30,19 @@ body {
 	border: black 1px solid;
 	display: flex;
 	flex-direction: column;
-/* flex-wrap: wrap; met ASIDE à 100 %... */
 }
+
+main {
+	display: flex;
+	/* flex-grow: 1; */
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around; /* placement des blocs section */
+}
+
+
+
+
 
 /* ############## TITRE SECTION ############## */
 
@@ -70,27 +81,48 @@ p {
 	padding-left: 1em;
 }
 
+
+#edito {
+	display: flex;
+	min-width: 100%;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 2em;
+}
+
 section.contener-section {
 display: flex;
-flex-direction: column;
-width: 100%;
-border: 0px solid green;
+flex-direction: row;
+width: 45%;
+border: 1px solid green;
+flex-wrap: wrap;
+margin-bottom: 2em;
+background-color: #E5E5E5;
+
+align-items: flex-start; /* block contenu égal au précedent mais centre le contenu !!  */
+align-content: flex-start; /* aligne le contenu sur le précédent ! */
+/* align-self: flex-start;  */ /* alignement contenu axe vertical height=100% du contenu */
+
 }
 
 header.contener-titre-section {
 display: flex;
 flex-direction: row;
+ /* align-content: flex-start; */
 width: 100%;
-border: 0px solid black;
+border: 1px solid black;
 }
 
-/* ICONES */
+/* ###########  ICONES ########### */
 
 div#globe {
 	background-image: url("../svg/icones/globe.svg");
   	background-repeat: no-repeat;
    background-origin: padding-box;
 	background-position: center center; 
+	width: 2em;
+	margin-left: 1em;
 }
 
 div#plume {
@@ -99,6 +131,7 @@ div#plume {
    background-origin: padding-box;
 	background-position: center center; 
 	width: 2em;
+	margin-left: 1em;
 }
 
 div#drum {
@@ -107,6 +140,7 @@ div#drum {
    background-origin: padding-box;
 	background-position: center center; 
 	width: 2em;
+	margin-left: 1em;
 }
 
 div#moon {
@@ -115,14 +149,26 @@ div#moon {
   	background-origin: padding-box;
 	background-position: center center; 
 	width: 2em;
+	margin-left: 1em;
 }
 
+/* ########### IMAGES ACCUEIL ############ */
+
+#inuit_map {
+width: 250px;
+height: 250px;
+}
+
+#lang_map {
+width: 250px;
+height: 137px;
+}
 
 
 div.puce {
 	display: flex;
 	justify-content: center; /* align horizontal */
-	align-items: center; /* align vertical */
+	align-items: center ; /* center align vertical */
 	flex-direction: row;
 	width: 5%;
 	border: 0px solid red;
@@ -131,6 +177,7 @@ div.puce {
 div.puceTitre {
 	display: flex;
 	flex-direction: row;
+	align-items: center; /* center align vertical */
 	width: 95%;
 	border: 0px solid red;
 }
@@ -175,10 +222,7 @@ height: 2em;
 
 
 
-section {
-	display: flex;
-	flex-direction: column;
-}
+
 
 
 nav { 
@@ -189,11 +233,12 @@ nav {
 
 
 /* STYLE POUR MOBILE */
-@media screen and (max-width: 680px){
+@media screen and (max-width: 414px) and (orientation: portrait) {
 	
 	#global {
 		margin: 0 auto;
-		max-width: 680px; /* screen */
+		width: auto;
+		max-width: 414px; /* screen */
 		border: black 1px solid;
 		display: flex;
 		flex-direction: column;
@@ -202,6 +247,11 @@ nav {
 		
 	}
 	
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
 	header > h1 {
 		display: block;
 	}	
@@ -231,7 +281,21 @@ nav {
 		display: none;	
 	}	
 
-    	  
+   section.contener-section {
+display: flex;
+flex-direction: column;
+width: 100%;
+border: 1px solid green;
+background-color: #ffffff;
+}
+
+header.contener-titre-section {
+display: flex;
+flex-direction: row;
+width: 100%;
+border: 1px solid black;
+}
+ 	  
 	#menu { 
 	 	display: block; 
     	width: 100%;
@@ -244,7 +308,7 @@ nav {
 
 
 
-/* ICONES */
+/* ###########  ICONES ########### */
 
 	div#globe {
 		background-image: url("../svg/icones/circle.svg");
@@ -281,6 +345,11 @@ nav {
 		width: 0.5em;
 		margin-left: 0.1em; 
 	}
+	
+	#inuit_map, #lang_map {
+		display: none;
+	}
+
 }
 
 
