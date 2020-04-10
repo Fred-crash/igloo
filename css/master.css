@@ -91,7 +91,6 @@ div#globe {
   	background-repeat: no-repeat;
    background-origin: padding-box;
 	background-position: center center; 
-	width: 2em;
 }
 
 div#plume {
@@ -117,6 +116,7 @@ div#moon {
 	background-position: center center; 
 	width: 2em;
 }
+
 
 
 div.puce {
