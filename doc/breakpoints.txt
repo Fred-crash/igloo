@@ -1,2 +1,100 @@
 # breakpoints
 
+> 	viewport: partie visible sur smartphone.
+
+> 	Pour déplacer un bloc sous un contenu, utilisez la balise <aside>. 
+	Pour cibler uniquement les mobiles, utilisez la règle basée sur le nombre réel de pixel : max-device-width.
+
+
+# résolution moyenne d’écran:
+
+	Desktop  : au delà de 1024 pixels
+	Tablette : entre 600 et 1024 pixels (en mode portrait)
+	Mobile   : entre 320 et 600 pixels  (en mode portrait)
+
+
+
+# media queries du Framework CSS Bootstrap :
+
+	@media(max-width:767px){}
+	@media(min-width:768px){}
+	@media(min-width:992px){}
+	@media(min-width:1200px){}
+
+# media queries W3C :
+	
+	/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) {...}
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) {...}
+
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {...}
+
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) {...}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {...} 	
+	
+	
+################################ Taille police et media queries. ################################ 
+
+	# Définir comme suit pour titre (exp):
+	
+	body {font-size: 100%;}
+	
+	h1 {font-size: 4em;}
+	
+	@media screen and (max-width: 64em) {
+		h1 {font-size: 2em;}
+	}
+	
+	@media screen and (max-width: 50em) {
+			h1 {font-size: 1.5em;}
+	}
+	
+		@media screen and (max-width: 30em) {
+			h1 {font-size: 1em;}
+	}
+	 
+	 plus de 1024 pixels
+    jusqu’à pixels (1024 : 16 = 64em)
+    jusqu’à 800 pixels (800 : 16 = 50em)
+    jusqu’à 480 pixels (480 : 16 = 30em)
+    
+    
+    
+   # Définir comme suit pour texte (exp):
+
+   body {font-size: 100%}
+
+	p {font-size: 1.5em;}
+
+	@media screen and (max-width: 64em) {
+ 		body {font-size: 90%;}
+	}
+
+	@media screen and (max-width: 50em) {
+ 		body {font-size: 75%;}
+	}
+
+	@media screen and (max-width: 30em) {
+   	body {font-size: 50%;}
+}
+
+	# Possibilité d'ajuster les interlignes: line-height.
+
+################################ ################################ ################################ 
+
+
+################################ Taille police et viewport. ###################################### 
+(pas de support opera-mini et partiel sous IE)
+
+
+	TODO !!! 
+
+
+################################ ################################ ################################ 
+
